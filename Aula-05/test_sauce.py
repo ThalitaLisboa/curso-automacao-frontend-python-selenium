@@ -44,13 +44,13 @@ def test_mandatory_scenario(driver):
     checkout_button.click()
 
     first_name = driver.find_element(By.NAME, "firstName")
-    first_name.send_keys("Shiv")
+    first_name.send_keys("Kendall")
 
     last_name = driver.find_element(By.NAME, "lastName")
     last_name.send_keys("Roy")
 
     postal_code = driver.find_element(By.NAME, "postalCode")
-    postal_code.send_keys("21230-030")
+    postal_code.send_keys("20270-040")
 
     continue_button = driver.find_element(By.CLASS_NAME, "submit-button")
     continue_button.click()
