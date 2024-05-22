@@ -27,6 +27,6 @@ def test_fill_form_from_csv(driver):
             driver.find_element(By.ID, "nome").send_keys(nome)
             driver.find_element(By.ID, "sobrenome").send_keys(sobrenome)
             driver.find_element(By.ID, "email").send_keys(email)
-            driver.find_element(By.XPATH, "//button[text()='Cadastrar']").click()
+            driver.find_element(By.XPATH, "//button[@onclick='cadastrar()'][contains(.,'Cadastrar')]").click() 
             sleep(1)
         sleep(20)
