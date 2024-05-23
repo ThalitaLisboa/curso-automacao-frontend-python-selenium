@@ -1,40 +1,74 @@
-```markdown
+---
 # Aula 12 - Testes de Interação Avançada com Elementos Web
 
 ## Descrição
 Nesta aula, você aprenderá a escrever testes automatizados utilizando o Selenium WebDriver para interagir com elementos web avançados, como sliders, switches, dropdowns dinâmicos, modais e iframes.
 
-## Arquivos
+## Conteúdo
 
-- `test_slider_interaction.py`: Contém um teste para interagir com um controle deslizante (slider) e verificar se o valor foi ajustado corretamente.
-- `test_switch_interaction.py`: Implementa um teste para alternar um switch e verificar se o estado mudou adequadamente.
-- `test_dynamic_dropdown_interaction.py`: Este arquivo contém um teste para selecionar opções em um dropdown dinâmico e verificar se as seleções foram aplicadas corretamente.
-- `test_modal_interaction.py`: Contém um teste para interagir com um modal, preenchendo campos e verificando mensagens de sucesso.
-- `test_iframe_interaction.py`: Implementa um teste para interagir com elementos dentro de um iframe, realizando ações e verificando mensagens.
+### Arquivos de Teste
+
+- **`test_slider_interaction.py`**: Teste para interagir com um controle deslizante (slider) e verificar se o valor foi ajustado corretamente.
+- **`test_switch_interaction.py`**: Teste para alternar um switch e verificar se o estado mudou adequadamente.
+- **`test_dynamic_dropdown_interaction.py`**: Teste para selecionar opções em um dropdown dinâmico e verificar se as seleções foram aplicadas corretamente.
+- **`test_modal_interaction.py`**: Teste para interagir com um modal, preenchendo campos e verificando mensagens de sucesso.
+- **`test_iframe_interaction.py`**: Teste para interagir com elementos dentro de um iframe, realizando ações e verificando mensagens.
 
 ## Pré-Requisitos
-- Python instalado no sistema. Você pode baixar o Python [aqui](https://www.python.org/downloads/).
-- Instalação das dependências necessárias usando o comando:
+
+- **Python**: Certifique-se de ter o Python instalado no seu sistema. Você pode baixar a versão mais recente [aqui](https://www.python.org/downloads/).
+- **Dependências**: Instale as dependências necessárias executando o seguinte comando:
   ```sh
   pip install -r requirements.txt
   ```
-- Certifique-se de que o Chrome WebDriver está instalado e configurado corretamente. Você pode baixar o Chrome WebDriver [aqui](https://sites.google.com/a/chromium.org/chromedriver/downloads). Certifique-se de adicionar o executável do Chrome WebDriver ao seu PATH.
 
-## Como Rodar
+---
 
-1. Clone ou baixe os arquivos desta aula.
-2. Navegue até o diretório da Aula 12 no terminal.
-3. Execute os testes utilizando o comando:
+## Guia Rápido
+
+### Configuração do Ambiente
+
+1. **Clone o Repositório**:
    ```sh
-   pytest
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
    ```
 
-Certifique-se de ter os requisitos necessários instalados e o WebDriver configurado corretamente antes de executar os testes.
+2. **Crie um Ambiente Virtual**:
+   ```sh
+   python -m venv venv
+   source venv/bin/activate # No Windows: venv\Scripts\activate
+   ```
 
-### Observações
+3. **Instale as Dependências**:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-- Verifique se o Chrome WebDriver está no seu PATH ou ajuste o caminho diretamente nos arquivos de teste, se necessário.
-- Os scripts abrirão o navegador Chrome e executarão as ações descritas em cada teste.
-- O uso de `sleep()` é para fins de visualização e não é recomendado em scripts de produção. Considere usar esperas explícitas (`WebDriverWait`) para tornar os scripts mais robustos.
+### Executando os Testes
+
+Para executar todos os testes, utilize o comando:
+```sh
+pytest
 ```
 
+Para executar um teste específico, use:
+```sh
+pytest caminho/para/o/arquivo_de_teste.py
+```
+
+---
+
+## Estrutura do Projeto
+
+- **tests/**: Diretório contendo todos os arquivos de teste.
+- **requirements.txt**: Arquivo com as dependências necessárias para executar os testes.
+
+---
+
+## Recursos Adicionais
+
+- **Documentação do Selenium WebDriver**: [Selenium Documentation](https://www.selenium.dev/documentation/en/)
+- **Python**: [Documentação Oficial](https://docs.python.org/3/)
+
+---
